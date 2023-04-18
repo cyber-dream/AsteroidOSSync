@@ -77,4 +77,5 @@
     <string name="location_disabled_title">Location disabled</string>
     <string name="intro_slide6_title">Phone Notifications</string>
     <string name="intro_slide6_subtitle">To show the current connection state of the watch.</string>
+    <string name="gps_update_card">Gps</string>
 </resources>
