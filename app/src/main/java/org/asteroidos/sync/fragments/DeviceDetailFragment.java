@@ -23,12 +23,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -58,6 +60,7 @@ public class DeviceDetailFragment extends Fragment {
     private SharedPreferences mCallStateSettings;
 
     private FloatingActionButton mFab;
+    private Button GPSSendOnceButton;
 
     private boolean mConnected = false;
 
@@ -97,6 +100,15 @@ public class DeviceDetailFragment extends Fragment {
                 mConnectListener.onDisconnectRequested();
             else
                 mConnectListener.onConnectRequested();
+        });
+
+        GPSSendOnceButton = view.findViewById(R.id.GPSSendOnce);
+        Log.d("myTag", "This is my message");
+        GPSSendOnceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("myTag", "Pressed");
+            }
         });
 
         mDisconnectedText = view.findViewById(R.id.info_disconnected);
