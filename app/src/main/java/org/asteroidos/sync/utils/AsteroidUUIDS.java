@@ -58,4 +58,7 @@ public class AsteroidUUIDS {
     public static final UUID NOTIFICATION_SERVICE_UUID  = UUID.fromString("00009071-0000-0000-0000-00A57E401D05");
     public static final UUID NOTIFICATION_UPDATE_CHAR   = UUID.fromString("00009001-0000-0000-0000-00A57E401D05");
     public static final UUID NOTIFICATION_FEEDBACK_CHAR = UUID.fromString("00009002-0000-0000-0000-00A57E401D05");
+
+    // GPS Service
+    public static final UUID GPS_SERVICE_COORDS  = UUID.fromString("0001001-0000-0000-0000-00A57E401D05");
 }
